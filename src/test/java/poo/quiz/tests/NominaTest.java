@@ -36,4 +36,16 @@ public class NominaTest {
 		// Assert
 		Assert.assertTrue(pudoDespedir);
 	}
+	
+	@Test
+	public void consultarElNombreDelEmpleadoYQueEsteBueno() {
+		// Arrange
+		Directo empleado 	= new Directo("Ligia", 3500000);
+		
+		// Act
+		String nombre = empleado.getNombre();
+		
+		// Assert
+		Assert.assertEquals("Ligia", nombre);
+	}
 }
